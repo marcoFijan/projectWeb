@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html">Mijn lijsties</a></li>
-          <li><a href="#">Bezochte landen</a></li>
+          <li><a href="#visitedLand">Bezochte landen</a></li>
           <li><a href="#">Mijn favorieten</a></li>
           <li class="buttom"><a href="#">Vakantie modus uitzetten</a></li>
           <li class="buttom"><a href="#">Uitloggen</a></li>
@@ -29,7 +29,7 @@
   </header>
   <main>
     <h1>Mijn Lijsties</h1>
-    <section>
+    <section class="myLists">
       <div>
         <a href="griekenland.html">
           <!-- image bron: https://www.kras.nl/vakantie/griekenland -->
@@ -47,9 +47,35 @@
         <img src="resources/images/belgie.jpg" alt="België Afbeelding">
         <h2>België: Gent</h2>
       </div>
+      <div>
+        <a href="zoekLand.html">
+          <p>+</p>
+          <h2>Nieuw lijstie</h2>
+        </a>
+      </div>
     </section>
+
+    <div class="seperator pc"></div>
+
+    <article class="info">
+      <h1>Mijn Lijstie...? Wat is dit allemaal?</h1>
+      <p>Mijn Lijstie is een reisgids. Met deze reisgids kun je verschillende 'lijsties' maken met verschillende accomodaties die jij wilt bezoeken in verschillende steden.</p>
+      <p>Je eigen lijstie maken doe je in de volgende stappen:</p>
+      <ol>
+        <li>Zoek op Mijn Lijstie een leuke stad op waar je graag naar toe wilt</li>
+        <li>Klik op nieuw lijstie maken</li>
+        <li>Vul jou favoriete plekjes in over verschillende dagen</li>
+        <li>Sla je lijstie op. (Dit kun je later altijd nog aanpassen)</li>
+        <li>En dat is het! Je lijstie word automatisch geactiveerd op je mobiel wanneer je in die locatie of stad bent.</li>
+      </ol>
+      <p>Word je lijstie niet geactiveerd? Of word het verkeerde lijstie geactiveerd? Dan kun je altijd nog handmatig je goede lijstie activeren door op je lijstie te klikken</p>
+      <div class="goBackButton"><a href="zoekLand.html">Maak nu je lijstie!</a></div>
+    </article>
+
     <div class="seperator"></div>
-    <h1>Mijn bezochte landen</h1>
+
+
+    <h1 id="visitedLand">Mijn bezochte landen</h1>
     <section>
       <div>
         <!-- https://blog.suntip.nl/de-mooiste-costas-van-spanje/ -->
@@ -60,10 +86,6 @@
         <!-- image bron: https://www.reisroutes.be/blog/nederland/tulpenvelden-tips-info/ -->
         <img src="resources/images/nederland.jpg" alt="Nederland Afbeelding">
         <h2>Nederland</h2>
-      </div>
-      <div>
-        <p>+</p>
-        <h2>Nieuw lijstie</h2>
       </div>
     </section>
   </main>
